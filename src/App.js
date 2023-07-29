@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import players from './player'
-import playersList from './playersList';
+import Players from './players'
+import PlayersList from './playersList';
 
-function App() {
+function App(players) {
   return (
     <div className="App">
-     <playerList players={players}/>
+     <PlayersList players={players}/>
     </div>
   );
 }

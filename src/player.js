@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-
+import Players from './players'
 export default function player({player}) {
   return (
     <Card style={{ width: '18rem' }}>
