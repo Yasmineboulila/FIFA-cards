@@ -1,18 +1,24 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
-import Players from './players'
+
 export default function player({player}) {
   return (
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={player.image} />
-    <Card.Body>
-      <Card.Title>{player.name}</Card.Title>
+    <Card style={{ width: '350px' ,backgroundColor:'gray', margin:'50px 70px' }}>
+    <Card.Img variant="top" src={player.image} style={{width:'350px', height:'450px'}} />
+    <Card.Body style={{fontFamily: 'Georgia'}}>
+      <Card.Title style={{fontSize:'x-large'}}>{player.name}</Card.Title>
       <Card.Text>
        {player.team}
-       {player.nationality}
+       </Card.Text>
+       <Card.Text>
        {player.jerseyNumber}
-       {player.age}
-      </Card.Text>
+       </Card.Text>
+       <Card.Text>
+       {player.nationality}
+       </Card.Text>
+       <Card.Text>
+       {player.age} years old
+       </Card.Text>
     </Card.Body>
   </Card>
   )

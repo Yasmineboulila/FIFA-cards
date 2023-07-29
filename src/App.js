@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Players from './players'
+import players from './players'
 import PlayersList from './playersList';
 
-function App(players) {
+function App() {
   return (
     <div className="App">
      <PlayersList players={players}/>
